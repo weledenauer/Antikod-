@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Begin20
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            do
+            {
+                Console.Write("x2 =");
+                int x2 =
+                Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("x1 =");
+                int x1 =
+                Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("y2 =");
+                int y2 =
+                Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("y1 =");
+                int y1 =
+                Convert.ToInt32(Console.ReadLine());
+
+                double m = (Math.Pow((x2 - x1), 2));
+                double n = (Math.Pow((y2 - y1), 2));
+                double k = (Math.Sqrt(m + n));
+                
+                Console.WriteLine("Расстояние={0}", k);
+
+
+
+            }
+            while (true);
+        }
+    }
+}

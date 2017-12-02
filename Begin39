@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Begin39
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            do
+            {
+                Console.Write("A =");
+                int A =
+                Convert.ToInt32(Console.ReadLine());
+                if (A == 0)
+                {
+                    Console.WriteLine("Mistake");
+                }
+
+            
+                Console.Write("B =");
+                int B =
+                Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("C =");
+                int C =
+                Convert.ToInt32(Console.ReadLine());
+
+                
+                double D = (B*B - 4*A*C);
+                Console.WriteLine("D={0}", D);
+                if (D < 0)
+                {
+                    Console.WriteLine("Mistake");
+                }
+                if (D == 0)
+                {
+                    Console.WriteLine("Mistake");
+                }
+
+                double k = (Math.Sqrt(D));
+                Console.WriteLine("k={0}", k);
+
+                double x1 = ((-B+k)/(2*A));
+                Console.WriteLine("x1={0}", x1);
+
+                double x2 = ((-B - k) / (2 * A));
+                Console.WriteLine("x2={0}", x2);
+
+                double[] q = {x1,x2 };
+                Console.WriteLine("Min={0}",q.Min());
+                Console.WriteLine("Max={0}",q.Max());
+
+
+
+
+
+
+            }
+            while (true);
+        }
+    }
+}
